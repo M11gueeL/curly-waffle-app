@@ -28,7 +28,7 @@ function SampleTable() {
             <tr
               key={row.id}
               className={`transition-colors duration-300
-                          ${index % 2 === 0 ? 'bg-white dark:bg-gray-800' : 'bg-gray-50 dark:bg-gray-750'}
+                          ${index % 2 === 0 ? 'bg-white dark:bg-gray-800' : 'bg-gray-50 dark:bg-gray-900'}
                           hover:bg-gray-100 dark:hover:bg-gray-700`} // Filas con bandas (zebra stripes) adaptadas
             >
               <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900 dark:text-white">{row.id}</td>
