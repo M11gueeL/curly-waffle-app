@@ -1,10 +1,13 @@
 import React from 'react';
+import DashboardLayout from './components/DashboardLayout';
+import Dashboard from './components/Dashboard';
 
 function App() {
+  // El DashboardLayout se encarga del fondo y la estructura base.
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-100">
-      <h1 className="text-4xl font-bold text-blue-600">¡Hola, Mundo!</h1>
-    </div>
+    <DashboardLayout>
+      <Dashboard />
+    </DashboardLayout>
   );
 }
 
