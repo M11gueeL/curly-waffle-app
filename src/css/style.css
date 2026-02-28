@@ -1,3 +1,37 @@
 @import "tailwindcss";
 
+@theme {
+  --color-primary: #FF6B4A;
+  --color-secondary: #FFC857;
+  
+  --color-background-light: #F7F5F0;
+  --color-background-dark: #121212;
+
+  --color-surface-light: #FFFFFF;
+  --color-surface-dark: #1E1E1E;
+
+  --color-text-heading-light: #2D3142;
+  --color-text-heading-dark: #F7F5F0;
+
+  --color-text-body-light: #4A4A4A;
+  --color-text-body-dark: #D1D1D1;
+
+  --color-border-light: #E2E8F0;
+  --color-border-dark: #2D3142;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.5s ease-out forwards;
+}
+
+.animate-fade-in-delayed {
+  animation: fadeIn 0.5s ease-out 0.2s forwards;
+  opacity: 0;
+}
+
 @variant dark (&:where(.dark, .dark *));
